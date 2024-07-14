@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognify - Make your own AI</title>
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+<style>
+  
+        .container {
+            
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+  h1 {
+            text-align: center;
+            color: white;
+        }
+        .subtitle {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.778);
+            margin-bottom: 20px;
+        }
+        .toggle {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .toggle-button {
+            background-color: #a855f7;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .toggle-button:first-child {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .toggle-button:last-child {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: #f3e8ff;
+            color: #333;
+        }
+        .plans {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 100px;
+        }
+        .plan {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            height: 50vh;
+            
+        }
+        .plan h2 {
+            color: #8249ff;
+            margin-top: 0;
+            
+            
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+        .features {
+            list-style-type: none;
+            padding: 0;
+            color: black;
+            flex-grow: 1;
+        }
+        .features li::before {
+            content: "✓ ";
+            color: #a855f7;
+            font-weight: bold;
+        }
+        .cta {
+            background-color: transparent;
+            color: #8249ff;
+            
+            border-color: #8249ff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            display: block;
+            width: 250px;
+            height: auto;
+            font-size: 17px;
+            margin-top: 20px;
+            font-family: "Poppins", sans-serif;
+            margin-top: auto;
+        }
+        .cta:hover{
+          box-shadow: 0 0 10px ;
+          background-color: #8249ff;
+          color: white;
+        }
+        #custom {
+            background-color: #f3e8ff;
+        }
+        #custom .cta {
+            background-color: transparent;
+        }
+        .cta1{
+          background-color: #8249ff;
+            color: white;
+            
+            border-color: #8249ff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            display: block;
+            width: 250px;
+            height: auto;
+            font-size: 17px;
+            margin-top: 20px;
+            font-family: "Poppins", sans-serif;
+            margin-top: auto;
+        }
+        .cta1:hover{
+          
+          background-color: transparent;
+          color: #8249ff;
+        }
+        
+</style>
+</head>
+<body>
+  <div class="container">
+      <header>
+        <a href="desktop.html">
+          <div class="logo-container">
+            
+            <div class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="8" fill="#ffffff"/>
+                    <g fill="none" stroke="#ffffff" stroke-width="4">
+                        <ellipse cx="50" cy="50" rx="25" ry="45"/>
+                        <ellipse cx="50" cy="50" rx="25" ry="45" transform="rotate(60 50 50)"/>
+                        <ellipse cx="50" cy="50" rx="25" ry="45" transform="rotate(-60 50 50)"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="company-name">Cognify</div>
+        </div>
+        </a>
+         
+          <nav>
+              <a href="desktop.html">Home</a>
+              <a href="pricing.html">Pricing</a>
+              <a href="contactus.html">Contact Us</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="careers.html">Careers</a>
+              <a href="signup.html" class="sign-up">Try for free</a>
+          </nav>
+      </header>
+      <div>
+
+        <h1>Choose your right plan!</h1>
+        <p class="subtitle">Select from best plans, ensuring a perfect match. Need more or less?<br>Customize your subscription for a seamless fit!</p>
+        
+        <div class="plans">
+            <div class="plan">
+                <h2>Free</h2>
+                <p class="price">Free</p>
+                <ul class="features">
+                    <li>limited Access</li>
+                    <li>Limited access to advanced data analysis, file loading, vision, web browsing</li>
+                    <li>Task delivered one-by-one</li>
+                    <li>Dedicated dashboard</li>
+                    <li>limited Tasks</li>
+                </ul>
+                <button class="cta">Get started</button>
+            </div>
+            <div class="plan">
+                <h2>Pro Plus</h2>
+                <p class="price">$18<span>/month</span></p>
+                <ul class="features">
+                    <li>All in Free +</li>
+                    <li>Level up your Cognify usage with 5x more usage versus Free plan</li>
+                    <li>Train your own AI everyday</li>
+                    <li>Create Project to work with Cognify </li>
+                    <li>Tasks delivered one-by-one</li>
+                </ul>
+                <button class="cta1">Get started</button>
+            </div>
+            <div class="plan" id="custom">
+                <h2>Enterprise</h2>
+                <p class="price">$28<span>/month</span></p>
+                <ul class="features">
+                    <li>All in Unlimited +</li>
+                    <li>Higher limits for Cognify</li>
+                    <li>Priority support</li>
+                    <li>Advanced Analytics</li>
+                    <li>Administrator console for workspace management</li>
+      
+                </ul>
+                <button class="cta">Book a Call</button>
+            </div>
+        </div>
+
+      </div>
+    <div>   
+  </body>
+</html>
