@@ -1,0 +1,271 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Mono", monospace;
+    background-color: #020814;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+
+}
+a{
+    text-decoration: none;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    
+    
+    
+}
+
+.logo svg {
+    width: 100%;
+    height: 100%;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+form {
+    background-color: #1d163f;
+    border-radius: 8px;
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #7724f6;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+    width: 97%;
+    padding: 8px 5px;
+    border-radius: 10px;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    background-color: #ffffffe1;
+    color: #020814;
+    font-size: 14px;
+}
+
+input[type="file"] {
+    padding: 6px;
+}
+
+.shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    background: #9c6be5;
+    
+    width: 100%;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+form {
+    background-color: #1d163f;
+    border-radius: 8px;
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #7724f6;
+    position: relative;
+    
+    box-shadow:
+        0 0 5px #7724f6,
+        0 0 10px #7724f6,
+        0 0 20px #7724f6,
+        0 0 40px #7724f6;
+    
+
+    animation: neonPulse 1.5s infinite alternate;
+}
+
+
+@keyframes neonPulse {
+    from {
+        box-shadow:
+            0 0 5px #7724f6,
+            0 0 10px #7724f6,
+            0 0 20px #7724f6,
+            0 0 40px #7724f6;
+    }
+    to {
+        box-shadow:
+            0 0 10px #7724f6,
+            0 0 20px #7724f6,
+            0 0 40px #7724f6,
+            0 0 80px #7724f6;
+    }
+}
+
+
+
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo svg {
+  width: 100%;
+  height: 100%;
+}
+
+.company-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Space Mono", monospace;
+}
+
+.company-name a {
+  color: white;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin-right: 20px;
+
+}
+
+nav a:hover {
+  color: #9e6ce7;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sign-up {
+  background-color: white;
+  color: #020814;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.sign-up:hover {
+  background-color: #9c6be5;
+  color: white;
+  box-shadow: 0 0 10px rgb(119, 36, 246, 0.5);
+}
+
+
+
+.footer {
+  background-color: #020814;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 100px;
+}
+.footer-section {
+  margin-right: 20px;
+}
+.footer-section:last-child {
+  margin-right: 0;
+}
+.footer-section h3 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-section li {
+  margin-bottom: 20px;
+}
+.footer-section a {
+  text-decoration: none;
+  color: #9e6de9;
+  font-size: 17px;
+}
+.footer-section a:hover {
+  text-decoration: underline;
+}
+.success-message-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.success-message {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
